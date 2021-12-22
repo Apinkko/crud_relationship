@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\CategorySubController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -22,3 +23,4 @@ Route::get('/', function () {
 
 Route::resource('categories', CategoryController::class);
 Route::resource('category_subs', CategorySubController::class);
+Route::resource('products', ProductController::class);
